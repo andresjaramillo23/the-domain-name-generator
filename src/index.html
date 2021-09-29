@@ -12,18 +12,43 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+      <div id="firstRow" class="row justify-content-center"></div>
+      <div id="secondRow" class="row justify-content-center">
+        <div class="col-md-auto">
+          <label
+            class="text-center text-uppercase fs-6 fw-italic font-monospace"
+            >Choose an input type from this list:
+            <input
+              type="text"
+              placeholder="Select value"
+              list="sentencesList"
+              name="myWordsList"
+              style="width: 150px;"
+          /></label>
+          <!-- <datalist id="sentencesList">
+            <option value="Prounoun"></option>
+            <option value="Adjective"></option>
+            <option value="Noun"></option>
+            <option value="WebsiteType"></option>
+          </datalist> -->
+        </div>
+        <div class="col-md-auto">
+          <label
+            class="text-center text-uppercase fs-6 fw-italic font-monospace"
+            >Type sentence:</label
+          >
+          <input type="text" placeholder="Type value" id="inputWord" />
+        </div>
+      </div>
+      <div id="thirdRow" class="row justify-content-center">
+        <div class="col-1">
+          <input id="b1" type="button" value="click me!" />
+        </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

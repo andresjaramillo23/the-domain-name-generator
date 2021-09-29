@@ -1,1 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#firstRow {
+  margin-top: 250px;
+}
+
+#secondRow {
+  margin-top: 150px;
+}
+
+#b1 {
+  margin-top: 100px;
+  margin-left: 50px;
+}
