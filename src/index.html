@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="shortcut icon" href="./4geeks.ico" /> -->
   </head>
 
   <body>
+    <div class="jumbotron jumbotron-fluid" style="background-color:coral">
+      <div class="container" style="height: 150px">
+        <h1 class="display-3">The Domain Name Generator!</h1>
+        <p class="lead">A place to generate your own domain</p>
+      </div>
+    </div>
     <div class="container">
       <div id="firstRow" class="row justify-content-center"></div>
       <div id="secondRow" class="row justify-content-center">
@@ -24,16 +30,16 @@
             <input
               type="text"
               placeholder="Select value"
-              list="sentencesList"
-              name="myWordsList"
+              list="inputList"
+              name="inputs"
               style="width: 150px;"
           /></label>
-          <!-- <datalist id="sentencesList">
+          <datalist id="inputList">
             <option value="Prounoun"></option>
             <option value="Adjective"></option>
             <option value="Noun"></option>
             <option value="WebsiteType"></option>
-          </datalist> -->
+          </datalist>
         </div>
         <div class="col-md-auto">
           <label

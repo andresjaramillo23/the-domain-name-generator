@@ -13,7 +13,7 @@ window.onload = function() {
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
-let websiteTypes = ["com", "gov", "net", "col", "ru"];
+let websiteTypes = ["com", "gov"];
 const enteredWords = new Array();
 
 function websiteGenerator() {
@@ -63,7 +63,8 @@ function setSentencesInHtml() {
 
 function resetInputValues() {
   document.getElementById("inputWord").value = "";
-  document.getElementsByName("myWordsList")[0].value = "";
+  document.getElementsByName("inputs")[0].value = "";
+  document.getElementById("firstRow").innerHTML = "";
 }
 
 function populateArrayOfNewWordsEntered(valueInput) {
@@ -94,7 +95,7 @@ const btn = document.getElementById("b1");
 
 btn.onclick = function() {
   let valueInput = document.getElementById("inputWord").value;
-  let keyInput = document.getElementsByName("myWordsList")[0].value;
+  let keyInput = document.getElementsByName("inputs")[0].value;
 
   populateArrayOfNewWordsEntered(valueInput);
   populateSentencesWithNewInput(valueInput, keyInput);
